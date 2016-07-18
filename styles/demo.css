@@ -1,0 +1,146 @@
+.painter {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.painter .painter-tool {
+    position: relative;
+}
+
+.painter .painter-tool .btn-group {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.painter .painter-tool .fa {
+    margin-right: 2px;
+}
+
+.painter .painter-tool .color-changer {
+    display: none;
+    position: absolute;
+    left: 380px;
+    top: 50px;
+    width: 152px;
+    margin: 0px;
+    padding: 5px;
+    list-style: none;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    background-color: #fff;
+}
+
+.painter .painter-tool .color-changer li {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.painter .painter-tool .thickness-changer {
+    display: none;
+    position: absolute;
+    left: 323px;
+    top: 50px;
+    width: 152px;
+    margin: 0px;
+    padding: 5px;
+    list-style: none;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    background-color: #fff;
+}
+
+.painter .painter-tool .thickness-changer li {
+    position: relative;
+    float: left;
+    width: 25px;
+    height: 25px;
+    line-height: 16px;
+    text-align: center;
+    font-family: 'FontAwesome';
+    margin: 5px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.painter .painter-tool .thickness-changer li.active {
+    background-color: #e6e6e6;
+}
+
+.painter .painter-tool .thickness-changer li:before {
+    display: block;
+    content: "\f111";
+    margin-top: 4px;
+}
+
+.painter .painter-tool .thickness-changer li:nth-child(1):before {
+    transform: scale(0.3);
+}
+
+.painter .painter-tool .thickness-changer li:nth-child(2):before {
+    transform: scale(0.4);
+}
+
+.painter .painter-tool .thickness-changer li:nth-child(3):before {
+    transform: scale(0.5);
+}
+
+.painter .painter-tool .thickness-changer li:nth-child(4):before {
+    transform: scale(0.6);
+}
+
+.painter .painter-tool .thickness-changer li:nth-child(5):before {
+    transform: scale(0.7);
+}
+
+.painter .painter-tool .thickness-changer li:nth-child(6):before {
+    transform: scale(0.8);
+}
+
+.painter .painter-tool .thickness-changer li:nth-child(7):before {
+    transform: scale(0.9);
+}
+
+.painter .painter-tool .thickness-changer li:nth-child(8):before {
+    transform: scale(1);
+}
+
+.painter .painter-container {
+    position: relative;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.painter .painter-rotate {
+    position: relative;
+    cursor: move;
+    transition: all 0.5s ease-out;
+}
+
+.painter .painter-zoom {
+    transition: all 0.5s ease-out;
+}
+
+.painter img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.painter canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <title>画板</title>
+    <link rel="stylesheet" href="styles/demo.css">
+</head>
+<body>
+<h1>画板</h1>
+
+<div ng-controller="BoardController">
+    <draw-board data-canvas="imgPath" data-width="800" data-save="upload(img)">
+        <img src="images/img02.jpg" alt="试卷"/>
+    </draw-board>
+
+    <draw-board>
+        <img src="images/img02.jpg" alt="试卷"/>
+    </draw-board>
+</div>
+
+<script src="vendors/jquery/jquery.min.js"></script>
+<script src="vendors/angular/angular.min.js"></script>
+<script src="vendors/drawing-board/drawing-board.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/directives/drawboard.js"></script>
+</body>
+</html>
